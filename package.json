@@ -1,0 +1,41 @@
+{
+  "name": "@csquare/eslint-config",
+  "version": "0.1.0",
+  "description": "Official csquare-ai ESLint configuration.",
+  "keywords": [
+    "eslint",
+    "eslint-config",
+    "csquare"
+  ],
+  "main": ".eslintrc.js",
+  "homepage": "https://github.com/csquare-ai/eslint-config#readme",
+  "bugs": {
+    "email": "mathieu@csquare.ai",
+    "url": "https://github.com/owner/csquare-ai/issues"
+  },
+  "license": "MIT",
+  "author": "Mathieu Bour <mathieu@csquare.ai> (https://github.com/mathieu-bour)",
+  "repository": "github:csquare-ai/eslint-config",
+  "scripts": {
+    "prepare": "npx is-ci || husky install"
+  },
+  "dependencies": {
+    "@babel/eslint-parser": "^7.14.5",
+    "@typescript-eslint/eslint-plugin": "^4.27.0",
+    "@typescript-eslint/parser": "^4.27.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^3.4.0"
+  },
+  "peerDependencies": {
+    "eslint": ">=3"
+  },
+  "devDependencies": {
+    "@csquare/prettier-config": "^1.1.2",
+    "husky": "^6.0.0",
+    "is-ci": "^3.0.0",
+    "lint-staged": "^11.0.0",
+    "prettier": "^2.3.1",
+    "standard-commit": "^4.2.4"
+  },
+  "prettier": "@csquare/prettier-config"
+}
